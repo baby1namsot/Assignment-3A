@@ -1,10 +1,25 @@
 
 .cloud01 {
-
+  animation-name: moveCloud;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes moveCloud {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(800px);
+  }
 }
 
 .cloud02 {
-  
+  animation-name: moveCloud;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 
 
