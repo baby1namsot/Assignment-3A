@@ -10,8 +10,20 @@ h1 {
   white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .15em; 
+  width: 0;
+animation:
+  typing 3s steps(14, end) forwards,
+  blinking 0.75s step-end infinite;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
 @keyframes blinking {
   0%, 100% {
