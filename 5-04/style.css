@@ -1,6 +1,30 @@
 h1 {
   font-family: 'Recursive', "Times New Roman";
   font-size: 10rem;
+   font-variation-settings:
+    "CASL" 0,
+    "CRSV" 0,
+    "wght" 300,
+    "slnt" 0;
+      animation: changeFont 3s ease-in-out infinite alternate;
+}
+@keyframes changeFont {
+  0% {
+    font-variation-settings:
+      "CASL" 0,
+      "CRSV" 0,
+      "wght" 300,
+      "slnt" 0;
+  }
+
+  100% {
+    font-variation-settings:
+      "CASL" 1,
+      "CRSV" 1,
+      "wght" 1000,
+      "slnt" -15;
+      
+  }
 }
 
 body {
